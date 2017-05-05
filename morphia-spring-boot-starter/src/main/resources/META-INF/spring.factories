@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=es.ganchix.morphia.configuration.MorphiaAutoConfiguration
+
