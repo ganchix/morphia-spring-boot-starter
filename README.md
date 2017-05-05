@@ -90,7 +90,7 @@ Only add Maven dependency:
 
 #### Without `@SpringBootApplication` or `@EnableAutoConfiguration` 
 
-You must to have a `@ComponentScan` in the root package.
+You need a `@ComponentScan` in the root package.
 
 Add Maven dependency:
 
