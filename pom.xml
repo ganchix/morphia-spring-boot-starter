@@ -41,6 +41,8 @@
         <morphia.version>1.2.1</morphia.version>
         <commons-lang3.version>3.5</commons-lang3.version>
         <equalsverifier.version>2.2.1</equalsverifier.version>
+        <flapdoodle.version>2.0.0</flapdoodle.version>
+        <logging.version>1.2</logging.version>
     </properties>
 
 
