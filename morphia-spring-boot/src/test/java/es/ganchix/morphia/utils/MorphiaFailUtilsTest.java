@@ -22,8 +22,9 @@ public class MorphiaFailUtilsTest {
 
     @Test(expected = Exception.class)
     public void testCallGetClassesWithFail_ShouldReturnAException() throws IOException, ClassNotFoundException {
+
         PowerMockito.mockStatic(ReflectionUtils.class);
-        BDDMockito.given(ReflectionUtils.getClasses(PACKAGE_NAME, true)).willThrow(new Exception());
+        BDDMockito.given(ReflectionUtils.getClasses(PACKAGE_NAME, true)).willThrow(new RuntimeException());
         MorphiaUtils.getClasses(PACKAGE_NAME);
     }
 
