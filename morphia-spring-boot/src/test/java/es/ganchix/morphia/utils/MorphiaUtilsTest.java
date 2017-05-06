@@ -39,6 +39,10 @@ public class MorphiaUtilsTest {
         assertThat(classes.size(), is(2));
 
     }
+    @Test
+    public void testCallGetClasses_ShouldReturnAClassesInPackage1() {
+        Set<Class<?>> classes = MorphiaUtils.getClasses("es.ganchix.morphia.utils.context.normal.NotClass.class");
+    }
 
 
 }

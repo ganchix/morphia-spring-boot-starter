@@ -37,10 +37,13 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <spring.boot.version>1.4.3.RELEASE</spring.boot.version>
+        <spring.boot.version>1.5.3.RELEASE</spring.boot.version>
         <morphia.version>1.2.1</morphia.version>
         <commons-lang3.version>3.5</commons-lang3.version>
         <equalsverifier.version>2.2.1</equalsverifier.version>
+        <flapdoodle.version>2.0.0</flapdoodle.version>
+        <logging.version>1.2</logging.version>
+        <powermock.version>1.6.6</powermock.version>
     </properties>
 
 
