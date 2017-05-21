@@ -9,14 +9,14 @@
     <description>Spring boot starter using for morphia integration.</description>
 
     <parent>
-        <groupId>es.ganchix</groupId>
+        <groupId>io.ganchix.github</groupId>
         <artifactId>morphia-spring-boot-parent</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
     <dependencies>
         <dependency>
-            <groupId>es.ganchix</groupId>
+            <groupId>io.ganchix.github</groupId>
             <artifactId>morphia-spring-boot</artifactId>
             <version>${project.version}</version>
         </dependency>

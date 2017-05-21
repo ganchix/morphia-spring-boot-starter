@@ -1,7 +1,7 @@
-package es.ganchix.morphia.configuration;
+package io.ganchix.github.morphia.configuration;
 
 import com.mongodb.MongoClient;
-import es.ganchix.morphia.utils.MorphiaUtils;
+import io.ganchix.github.morphia.utils.MorphiaUtils;
 import org.mongodb.morphia.Datastore;
 import org.mongodb.morphia.Morphia;
 import org.mongodb.morphia.annotations.Entity;
@@ -56,7 +56,7 @@ public class MorphiaAutoConfiguration {
 
         classes.parallelStream()
                 .filter(clazz -> Objects.nonNull(clazz.getAnnotation(Entity.class)))
-                .forEach(morphia::map);
+                .forEach( clazz ->morphia.map(clazz));
 
         Datastore dataStore = morphia.createDatastore(mongoClient, mongoTemplate.getDb().getName());
         dataStore.ensureIndexes();

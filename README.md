@@ -52,9 +52,7 @@ public class Account {
 Create your repositories:
 
 ```java
-import lombok.extern.slf4j.Slf4j;
 import org.mongodb.morphia.Datastore;
-import org.mongodb.morphia.query.Criteria;
 import org.mongodb.morphia.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -106,12 +104,9 @@ Add Maven dependency:
 Import auto configuration `MorphiaAutoConfiguration`:
 
 ```java
-import org.springframework.boot.autoconfigure.AutoConfigureBefore;
-import org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
-import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
- 
+import org.springframework.context.annotation.Import;
+    
 @Configuration
 @Import(MorphiaAutoConfiguration.class)
 public class MorphiaConfig {

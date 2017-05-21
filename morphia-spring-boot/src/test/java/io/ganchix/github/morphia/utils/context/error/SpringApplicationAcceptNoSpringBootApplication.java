@@ -1,4 +1,4 @@
-package es.ganchix.morphia.utils.context.error;
+package io.ganchix.github.morphia.utils.context.error;
 
 import org.springframework.context.annotation.Configuration;
 
