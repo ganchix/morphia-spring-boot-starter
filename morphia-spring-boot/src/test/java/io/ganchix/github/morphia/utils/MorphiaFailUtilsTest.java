@@ -1,4 +1,4 @@
-package es.ganchix.morphia.utils;
+package io.ganchix.github.morphia.utils;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

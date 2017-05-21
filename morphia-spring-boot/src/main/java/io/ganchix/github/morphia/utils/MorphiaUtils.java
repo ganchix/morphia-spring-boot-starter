@@ -1,4 +1,4 @@
-package es.ganchix.morphia.utils;
+package io.ganchix.github.morphia.utils;
 
 import org.mongodb.morphia.utils.ReflectionUtils;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
