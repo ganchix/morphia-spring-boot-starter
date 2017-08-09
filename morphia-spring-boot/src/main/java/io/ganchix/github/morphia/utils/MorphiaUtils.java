@@ -1,10 +1,13 @@
 package io.ganchix.github.morphia.utils;
 
+import org.mongodb.morphia.annotations.Entity;
 import org.mongodb.morphia.utils.ReflectionUtils;
+import org.reflections.Reflections;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.core.annotation.AnnotatedElementUtils;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -49,11 +52,9 @@ public class MorphiaUtils {
      * @return list of class
      */
     public static Set<Class<?>> getClasses(final String packageName) {
-        try {
-            return ReflectionUtils.getClasses(packageName, true);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
+        Reflections reflections = new Reflections(packageName);
+        return reflections.getTypesAnnotatedWith(Entity.class);
+
     }
 
 

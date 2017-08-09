@@ -30,18 +30,18 @@ public class MorphiaUtilsTest {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringApplicationTest.class);
         List<String> applicationPackageName = MorphiaUtils.getApplicationPackageName(context);
         assertThat(applicationPackageName.size(), is(1));
-        assertThat(applicationPackageName.get(0), is("es.ganchix.morphia.utils.context.normal"));
+        assertThat(applicationPackageName.get(0), is("io.ganchix.github.morphia.utils.context.normal"));
     }
 
     @Test
     public void testCallGetClasses_ShouldReturnAClassesInPackage() {
-        Set<Class<?>> classes = MorphiaUtils.getClasses("es.ganchix.morphia.utils.context.normal");
-        assertThat(classes.size(), is(2));
+        Set<Class<?>> classes = MorphiaUtils.getClasses("io.ganchix.github.morphia.utils.context.normal");
+        assertThat(classes.size(), is(1));
 
     }
     @Test
     public void testCallGetClasses_ShouldReturnAClassesInPackage1() {
-        Set<Class<?>> classes = MorphiaUtils.getClasses("es.ganchix.morphia.utils.context.normal.NotClass.class");
+        Set<Class<?>> classes = MorphiaUtils.getClasses("io.ganchix.github.morphia.utils.context.normal.NotClass.class");
     }
 
 
