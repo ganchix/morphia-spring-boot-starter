@@ -1,4 +1,4 @@
-package io.ganchix.github.morphia.utils;
+package io.github.ganchix.morphia.utils;
 
 import org.mongodb.morphia.annotations.Entity;
 import org.mongodb.morphia.utils.ReflectionUtils;

@@ -1,4 +1,4 @@
-package io.ganchix.github.utils.context.normal;
+package io.github.ganchix.utils.context.normal;
 
 import org.bson.types.ObjectId;
 import org.mongodb.morphia.annotations.Entity;

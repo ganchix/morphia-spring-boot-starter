@@ -1,7 +1,7 @@
-package io.ganchix.github.morphia.configuration;
+package io.github.ganchix.morphia.configuration;
 
 import com.mongodb.MongoClient;
-import io.ganchix.github.morphia.utils.MorphiaUtils;
+import io.github.ganchix.morphia.utils.MorphiaUtils;
 import org.mongodb.morphia.Datastore;
 import org.mongodb.morphia.Morphia;
 import org.mongodb.morphia.annotations.Entity;

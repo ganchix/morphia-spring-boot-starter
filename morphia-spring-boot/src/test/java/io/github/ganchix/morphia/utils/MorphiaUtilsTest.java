@@ -1,7 +1,7 @@
-package io.ganchix.github.morphia.utils;
+package io.github.ganchix.morphia.utils;
 
-import io.ganchix.github.morphia.utils.context.error.SpringApplicationAcceptNoSpringBootApplication;
-import io.ganchix.github.morphia.utils.context.normal.SpringApplicationTest;
+import io.github.ganchix.morphia.utils.context.error.SpringApplicationAcceptNoSpringBootApplication;
+import io.github.ganchix.morphia.utils.context.normal.SpringApplicationTest;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -30,18 +30,18 @@ public class MorphiaUtilsTest {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringApplicationTest.class);
         List<String> applicationPackageName = MorphiaUtils.getApplicationPackageName(context);
         assertThat(applicationPackageName.size(), is(1));
-        assertThat(applicationPackageName.get(0), is("io.ganchix.github.morphia.utils.context.normal"));
+        assertThat(applicationPackageName.get(0), is("io.github.ganchix.morphia.utils.context.normal"));
     }
 
     @Test
     public void testCallGetClasses_ShouldReturnAClassesInPackage() {
-        Set<Class<?>> classes = MorphiaUtils.getClasses("io.ganchix.github.morphia.utils.context.normal");
+        Set<Class<?>> classes = MorphiaUtils.getClasses("io.github.ganchix.morphia.utils.context.normal");
         assertThat(classes.size(), is(1));
 
     }
     @Test
     public void testCallGetClasses_ShouldReturnAClassesInPackage1() {
-        Set<Class<?>> classes = MorphiaUtils.getClasses("io.ganchix.github.morphia.utils.context.normal.NotClass.class");
+        Set<Class<?>> classes = MorphiaUtils.getClasses("io.github.ganchix.morphia.utils.context.normal.NotClass.class");
     }
 
 

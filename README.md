@@ -79,7 +79,7 @@ Only add Maven dependency:
 
 ```xml
 <dependency>
-    <groupId>es.ganchix</groupId>
+    <groupId>io.github.ganchix</groupId>
     <artifactId>morphia-spring-boot-starter</artifactId>
     <version>LATEST_VERSION</version>
 </dependency>
@@ -94,7 +94,7 @@ Add Maven dependency:
 
 ```xml
 <dependency>
-    <groupId>es.ganchix</groupId>
+    <groupId>io.github.ganchix</groupId>
     <artifactId>morphia-spring-boot</artifactId>
     <version>LATEST_VERSION</version>
 </dependency>

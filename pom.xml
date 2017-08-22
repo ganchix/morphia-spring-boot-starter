@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
 
-    <groupId>io.ganchix.github</groupId>
+    <groupId>io.github.ganchix</groupId>
     <artifactId>morphia-spring-boot-parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
