@@ -1,6 +1,6 @@
-package io.ganchix.github;
+package io.github.ganchix;
 
-import io.ganchix.github.utils.context.normal.SpringApplicationTest;
+import io.github.ganchix.utils.context.normal.SpringApplicationTest;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mongodb.morphia.Datastore;
