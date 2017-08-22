@@ -13,19 +13,19 @@ before_install:
   - if [ ! -z "$GPG_SECRET_KEYS" ]; then echo $GPG_SECRET_KEYS | base64 --decode | $GPG_EXECUTABLE --import --batch --yes; fi
   - if [ ! -z "$GPG_OWNERTRUST" ]; then echo $GPG_OWNERTRUST | base64 --decode | $GPG_EXECUTABLE --import-ownertrust --batch --yes; fi
 deploy:
-- 
+-
   provider: script
   script: .travis/deploy.sh
   skip_cleanup: true
   on:
-    repo: fintonic/morphia-spring-boot-starter
+    repo: ganchix/morphia-spring-boot-starter
     branch: master
     jdk: oraclejdk8
-- 
+-
   provider: script
   script: .travis/deploy.sh
   skip_cleanup: true
   on:
-    repo: fintonic/morphia-spring-boot-starter
+    repo: ganchix/morphia-spring-boot-starter
     tags: true
     jdk: oraclejdk8
