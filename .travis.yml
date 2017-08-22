@@ -1,31 +1,18 @@
 language: java
-jdk:
-  - oraclejdk8
+env:
+  global:
+    - secure: "biiijt7SJtwV1lseFaQ4NVzrMf+nJEptW1BUimXi0Sf07Gd1ntIrXgILf74V9pnO+T82quWlz7GjFZ8EdW2UqOI9wGbL9lh8neAZwYyzMVQKfgE/oI/YP4OhNcIJB/yMhhmww9RPt625qGyit/vCNmc85SVDxc+C7yy1XK0+s9gxYNtIGoWVPfm4X6Z3KU47HsqYz4aQ9S7PBGIdHCoqEzFAx6JpWoTdGYs+4m/ugKpZSlNkGhqFcpqZnlvZFJ9VWn8ofClyNieIGD9rYjui5aab+AVxYBSUhs3Y9TiTeHvXsoM9NA1zb6CjqYfrLiBaZKJQZANnJPOZDdqocfuDlUidkjdlXfnWjiZe4bHEog7xYHCyy0nO3nSOd5n+3Jsv7wV4Jz9bsUTJatYCm05ATGWRXc5RHVNshw23TeVMLLNNO0ju5y5VOYW0lJ3NnAj+tKXop8IMbpHuc9BGkZcjVX8SypxJ2bsJREYqvCxCMpyzcXi3uz8oTx16FW86b3H9JCYp72xXA552NJR7MkDhjiUsW5xSYQ6up31FweyMnfvi7jyRroYI9NSlAXT92ltMS+ot4ga5r+9Pi825NLckrIorVBIOJ9q0qV4Q5uwTxwFPg6OEPNxevxqW6qm1RQfyqZHlEnM1dy7HpV16M2aSU6MpXg8aayDK9rbk/BVakxQ="
+    - secure: "e/Cixku0//8nYV5S6slaWg64MoO+8gMfeT7PUnGZLI3Rnf4b11LvWby8SqS8zRaW717tMivyUhk/Cs+vSo3XSdeNhF4b9vNCuhz+r9JytcOj+7rYicJaXcaJa6yUajMHayIxKa6BZoF5kC88OaTp9eYAqgMnOtsy96lNEzKopHrxbA5EvTAKbr6dPGfRv/in3QkXh5MUWDLL+njxhhpy6RmY1E41PKxBDVp367qlkxBa0TzbJo2SvmFDM7QqQ0/KvqyfYQqIMXqNrf2eJyQaz9hh6xrmDZr6JQyL4DbyZ7/TQnR3m76rhHfBWduUSPor+duZLqgZx/A/WZnuNDjmu1Qu30TeAgw575BGBelR/jAzMrRgMrSva9Dxc1KBGl1MyJYY25YPGZsJO7AUkGvLmbcGdoyLlG6P6bZ8VAiL4ift0FjDMKG3m2StZLxZIo9xL6Nh1+C2hylAp5UCAFZdBFw5qWD1pRljUGNPVmuqUeWhnhqAaqdFgqxTDQagkUDP0ufiqPvBgNSWxyGir/Moc1uAv5x6E5jGFuD3Q1e5flkTIxuEVqKgbLZ5ZVAttYRogwz6Cc8BdKHKEzGTzkgaDyEpg7C3mBsv3E5AE2xjtw6YsY6x6K86YdUFZE62a11rH1LpBLPhGC0FtLkkzXBz7n2eY+B6V7PNaFAUQyW0764="
+    - secure: "ZQ0OTgoGytVLj086c3DQqjqRtLzxFLxIlQi1QuIRUwyAQXle0fEIoBFIzd482U4vFy2UtHblHl8ZH2SUMsiaJ2SOL8dsuTSFeIelVG+Y++pfDeGgQniq/N95tqfWFrgiTlCCgNiAYC1mWXxrqXO6YnMj1OogLgbP/DOZfRKNBGrIy7MxP9rGpuX8aJA3qWqW2djyd58acdMqNZNQ/uvEFqXenqbGS47FDZc/a+61j9K12FjJEeL8gmeoytiXYc9WaRaAf2DPP3mypD2p7Z9t2GKOQl1lO+xT5YtfzqqleTRqQ7xb3cjb+Ejd4E9jF4aZHcHyUulh84+MHCnYUZNDfyN+2EGTgcpS9l9Ucojk8lbWxsbatnwGQrMrF+i4kNqlgCdGyfH9Uk0oSeLbJpMJS62r/xnJodfYDDcBuokdr/xdOPZq9SFkglcPHJfM5uC+/PaaYfQRBRjWjyZgB5OR4pjrOMCtpGl7zl1ARAyUaQaeQzctanPMLGTonS/KV2+/prCea1NYqnvanAzlDvO4SnC/P/5ouaOxVulbY6wZ5tZXrACfM3jg939Aopf8KJpcuK3FBVxfagbaR3A4tZld0TWbk91a0DFKF13XiQBX97Q8HbujLtqJ868dA4XDQj+TIsR4JUujxTLWBUUOvPptU+RqzcFrid3w2ANV4nAJbqA="
+    - secure: "zI+DPNI+GMDzt4RFp8BZoEeM5XmbwnwDc/x+5d3GbEnpU/qt/TdZzyeBT01n80PdlrMfNpTX1Qx8bSpbJ9Or2lKl+uy5Q2sm/foYwvfz/sP8CrmvVRPOckvk2KU+ButGuHPa0k4LCK/pU1A0QFyzDuaX3E54Ot6Zoa1ztjKQqH4HPgeUUrJOOo1lGkcB7umVpjte6Audt7Rn0zUOK9Aeh09teFYNhpnipy29Hzwly2sXQkOyN+cY+IRPJI6hGQjMWYT/SIvVYU4nYQKI3hmqdElyi+mmIi1Bj77sTl2IJOtiAyhkyBItR6QqZwZFRl49/mQSiBxttY4rYvjG+jOt5oWOLD/xYYmQSzDE0Tmd1m6AU4fJjJ5gc2uueD/KMoxrfEYQwOJyHbKxfM0+7DcdqSupvMCtseCBdOz6e1wU7U2V8WG3BYdRBKk7r8cJ5uZVzjFyvBmqqiyghYfwKXPzmAR8ZX0a2ORytQtVZV+RX5U/q9Hg0tCGeD3q08p0XOl97JF3GowgfFZutNpUpbXkOBx9Z9VxiHnsC5BtugfYBgzNbgvcLCPzDjhJSgQ5I+Ons53adis4ICj5HBemAl9FjPuJhNqJggxXPwEQHWRFsVObZnXRrJW+wOvNMvCH+GjckDJaxymrQrQyJ2RiHGvT39ZZC218clDFNJJs8velkPI="
 
-script: "mvn clean cobertura:cobertura"
+install: mvn install -P !build-extras -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+script: mvn test -P !build-extras -B
+
+cache:
+  directories:
+    - ~/.m2/repository
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
-
-install:
-  - mvn --settings .travis/settings.xml install -DskipTests=true -Dgpg.skip -Dmaven.javadoc.skip=true -B -V
-before_install:
-  - if [ ! -z "$GPG_SECRET_KEYS" ]; then echo $GPG_SECRET_KEYS | base64 --decode | $GPG_EXECUTABLE --import --batch --yes; fi
-  - if [ ! -z "$GPG_OWNERTRUST" ]; then echo $GPG_OWNERTRUST | base64 --decode | $GPG_EXECUTABLE --import-ownertrust --batch --yes; fi
-deploy:
-- 
-  provider: script
-  script: .travis/deploy.sh
-  skip_cleanup: true
-  on:
-    repo: fintonic/morphia-spring-boot-starter
-    branch: master
-    jdk: oraclejdk8
-- 
-  provider: script
-  script: .travis/deploy.sh
-  skip_cleanup: true
-  on:
-    repo: fintonic/morphia-spring-boot-starter
-    tags: true
-    jdk: oraclejdk8
+  - ./cd/before-deploy.sh
+  - ./cd/deploy.sh
