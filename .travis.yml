@@ -29,3 +29,4 @@ deploy:
     repo: ganchix/morphia-spring-boot-starter
     tags: true
     jdk: oraclejdk8
+
