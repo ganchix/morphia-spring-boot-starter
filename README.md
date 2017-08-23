@@ -1,4 +1,4 @@
-# Spring boot starter Morphia [![Build Status](https://travis-ci.org/ganchix/morphia-spring-boot-starter.svg?branch=master)](https://travis-ci.org/ganchix/morphia-spring-boot-starter) [![codecov](https://codecov.io/gh/ganchix/morphia-spring-boot-starter/branch/master/graph/badge.svg)](https://codecov.io/gh/ganchix/morphia-spring-boot-starter) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/es.ganchix/morphia-spring-boot-parent/badge.svg?style=plastic)](https://maven-badges.herokuapp.com/maven-central/io.github.ganchix/morphia-spring-boot-parent) [![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Star)](https://github.com/ganchix/morphia-spring-boot-starter)
+# Spring boot starter Morphia [![Build Status](https://travis-ci.org/ganchix/morphia-spring-boot-starter.svg?branch=master)](https://travis-ci.org/ganchix/morphia-spring-boot-starter) [![codecov](https://codecov.io/gh/ganchix/morphia-spring-boot-starter/branch/master/graph/badge.svg)](https://codecov.io/gh/ganchix/morphia-spring-boot-starter) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.ganchix/morphia-spring-boot-parent/badge.svg?style=plastic)](https://maven-badges.herokuapp.com/maven-central/io.github.ganchix/morphia-spring-boot-parent) [![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Star)](https://github.com/ganchix/morphia-spring-boot-starter)
 
 Spring boot starter for use [Morphia](https://mongodb.github.io/morphia/) in a Spring way easily.
 
@@ -81,7 +81,7 @@ Only add Maven dependency:
 <dependency>
     <groupId>io.github.ganchix</groupId>
     <artifactId>morphia-spring-boot-starter</artifactId>
-    <version>LATEST_VERSION</version>
+    <version>1.0.0</version>
 </dependency>
 
 ```
@@ -96,7 +96,7 @@ Add Maven dependency:
 <dependency>
     <groupId>io.github.ganchix</groupId>
     <artifactId>morphia-spring-boot</artifactId>
-    <version>LATEST_VERSION</version>
+    <version>1.0.0</version>
 </dependency>
 
 ```
