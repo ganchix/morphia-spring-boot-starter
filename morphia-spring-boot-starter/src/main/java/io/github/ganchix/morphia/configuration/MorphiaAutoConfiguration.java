@@ -59,6 +59,7 @@ public class MorphiaAutoConfiguration {
                 .forEach( clazz ->morphia.map(clazz));
 
         Datastore dataStore = morphia.createDatastore(mongoClient, mongoTemplate.getDb().getName());
+        datastore.ensureCaps();
         dataStore.ensureIndexes();
         return dataStore;
     }
