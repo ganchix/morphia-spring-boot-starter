@@ -96,7 +96,7 @@ Add Maven dependency:
 <dependency>
     <groupId>io.github.ganchix</groupId>
     <artifactId>morphia-spring-boot</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 </dependency>
 
 ```
