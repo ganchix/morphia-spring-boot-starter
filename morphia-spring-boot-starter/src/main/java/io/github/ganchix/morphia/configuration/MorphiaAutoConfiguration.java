@@ -45,7 +45,7 @@ public class MorphiaAutoConfiguration {
     }
 
     @Bean
-    public Datastore datastore(Morphia morphia) throws ClassNotFoundException, IOException {
+    public Datastore datastore(Morphia morphia) {
 
         List<String> packageNamesFromApplication = MorphiaUtils.getApplicationPackageName(applicationContext);
 
@@ -56,10 +56,10 @@ public class MorphiaAutoConfiguration {
 
         classes.parallelStream()
                 .filter(clazz -> Objects.nonNull(clazz.getAnnotation(Entity.class)))
-                .forEach( clazz ->morphia.map(clazz));
+                .forEach(morphia::map);
 
         Datastore dataStore = morphia.createDatastore(mongoClient, mongoTemplate.getDb().getName());
-        datastore.ensureCaps();
+        dataStore.ensureCaps();
         dataStore.ensureIndexes();
         return dataStore;
     }
