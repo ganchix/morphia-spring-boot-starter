@@ -5,12 +5,12 @@
 
     <groupId>io.github.ganchix</groupId>
     <artifactId>morphia-spring-boot-parent</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.2-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>morphia-spring-boot-parent</name>
     <description>Spring boot starter using for morphia integration.</description>
     <url>https://github.com/ganchix/morphia-spring-boot-starter</url>
-    
+
     <licenses>
         <license>
             <name>MIT License</name>
