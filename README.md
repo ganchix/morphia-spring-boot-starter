@@ -1,4 +1,5 @@
 # Spring boot starter Morphia [![Build Status](https://travis-ci.org/ganchix/morphia-spring-boot-starter.svg?branch=master)](https://travis-ci.org/ganchix/morphia-spring-boot-starter) [![codecov](https://codecov.io/gh/ganchix/morphia-spring-boot-starter/branch/master/graph/badge.svg)](https://codecov.io/gh/ganchix/morphia-spring-boot-starter) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.ganchix/morphia-spring-boot-parent/badge.svg?style=plastic)](https://maven-badges.herokuapp.com/maven-central/io.github.ganchix/morphia-spring-boot-parent) [![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Star)](https://github.com/ganchix/morphia-spring-boot-starter)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fganchix%2Fmorphia-spring-boot-starter.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fganchix%2Fmorphia-spring-boot-starter?ref=badge_shield)
 
 Spring boot starter for use [Morphia](https://mongodb.github.io/morphia/) in a Spring way easily.
 
@@ -120,3 +121,6 @@ public class MorphiaConfig {
 Spring boot starter Morphia is licensed under the MIT License. See [LICENSE](LICENSE.md) for details.
 
 Copyright (c) 2017 Rafael Ríos Moya
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fganchix%2Fmorphia-spring-boot-starter.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fganchix%2Fmorphia-spring-boot-starter?ref=badge_large)
