@@ -1,8 +1,8 @@
 package io.github.ganchix.morphia.utils.context.normal;
 
+import dev.morphia.annotations.Entity;
+import dev.morphia.annotations.Id;
 import org.bson.types.ObjectId;
-import org.mongodb.morphia.annotations.Entity;
-import org.mongodb.morphia.annotations.Id;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 

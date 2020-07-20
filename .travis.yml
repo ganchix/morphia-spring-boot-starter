@@ -20,7 +20,7 @@ deploy:
   on:
     repo: ganchix/morphia-spring-boot-starter
     branch: master
-    jdk: oraclejdk8
+    jdk: openjdk11
 -
   provider: script
   script: .travis/deploy.sh
@@ -28,5 +28,5 @@ deploy:
   on:
     repo: ganchix/morphia-spring-boot-starter
     tags: true
-    jdk: oraclejdk8
+    jdk: openjdk11
 

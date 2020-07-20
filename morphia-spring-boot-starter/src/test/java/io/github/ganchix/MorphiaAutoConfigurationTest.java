@@ -1,10 +1,9 @@
 package io.github.ganchix;
 
+import dev.morphia.Datastore;
 import io.github.ganchix.utils.context.normal.SpringApplicationTest;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mongodb.morphia.Datastore;
-import org.mongodb.morphia.Morphia;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
@@ -25,7 +24,6 @@ public class MorphiaAutoConfigurationTest {
 
     @Test
     public void testAutoConfiguration_ShouldCreateAMorphiaAndDatastore() {
-        assertThat(applicationContext.getBean(Morphia.class), notNullValue());
         assertThat(applicationContext.getBean(Datastore.class), notNullValue());
 
     }

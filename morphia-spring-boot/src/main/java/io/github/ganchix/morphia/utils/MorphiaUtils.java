@@ -1,13 +1,11 @@
 package io.github.ganchix.morphia.utils;
 
-import org.mongodb.morphia.annotations.Entity;
-import org.mongodb.morphia.utils.ReflectionUtils;
+import dev.morphia.annotations.Entity;
 import org.reflections.Reflections;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.core.annotation.AnnotatedElementUtils;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -25,7 +23,7 @@ public class MorphiaUtils {
     /**
      * Return root package of spring boot application.
      *
-     * @param applicationContext
+     * @param applicationContext application context
      * @return list of packages
      */
     public static List<String> getApplicationPackageName(final ApplicationContext applicationContext) {
@@ -48,7 +46,7 @@ public class MorphiaUtils {
 
     /**
      * Return classes from a package name.
-     * @param packageName
+     * @param packageName the package name
      * @return list of class
      */
     public static Set<Class<?>> getClasses(final String packageName) {

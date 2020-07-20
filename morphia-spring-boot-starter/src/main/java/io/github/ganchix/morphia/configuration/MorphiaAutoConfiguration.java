@@ -1,10 +1,10 @@
 package io.github.ganchix.morphia.configuration;
 
-import com.mongodb.MongoClient;
+import com.mongodb.client.MongoClient;
+import dev.morphia.Datastore;
+import dev.morphia.Morphia;
+import dev.morphia.annotations.Entity;
 import io.github.ganchix.morphia.utils.MorphiaUtils;
-import org.mongodb.morphia.Datastore;
-import org.mongodb.morphia.Morphia;
-import org.mongodb.morphia.annotations.Entity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
@@ -38,14 +38,10 @@ public class MorphiaAutoConfiguration {
     @Autowired
     private ApplicationContext applicationContext;
 
-
     @Bean
-    Morphia morphia() {
-        return new Morphia();
-    }
+    public Datastore datastore() {
 
-    @Bean
-    public Datastore datastore(Morphia morphia) {
+        Datastore datastore = Morphia.createDatastore(mongoClient, mongoTemplate.getDb().getName());
 
         List<String> packageNamesFromApplication = MorphiaUtils.getApplicationPackageName(applicationContext);
 
@@ -53,15 +49,13 @@ public class MorphiaAutoConfiguration {
                 .parallelStream()
                 .flatMap(packageName -> MorphiaUtils.getClasses(packageName).parallelStream())
                 .collect(Collectors.toSet());
-
         classes.parallelStream()
                 .filter(clazz -> Objects.nonNull(clazz.getAnnotation(Entity.class)))
-                .forEach(morphia::map);
+                .forEach(clazz -> datastore.getMapper().map(clazz));
 
-        Datastore dataStore = morphia.createDatastore(mongoClient, mongoTemplate.getDb().getName());
-        dataStore.ensureCaps();
-        dataStore.ensureIndexes();
-        return dataStore;
+        datastore.ensureCaps();
+        datastore.ensureIndexes();
+        return datastore;
     }
 
 
